@@ -1,0 +1,14 @@
+{
+  "name": "craftmind-circuits",
+  "version": "1.0.0",
+  "description": "A Cocapn-inspired Minecraft Redstone Academy — learn circuits through gamified challenges",
+  "type": "module",
+  "main": "src/academy.js",
+  "scripts": {
+    "demo": "node examples/academy-demo.js",
+    "test": "node tests/test-all.js"
+  },
+  "keywords": ["minecraft", "redstone", "education", "gamification", "circuits"],
+  "license": "MIT",
+  "engines": { "node": ">=18" }
+}

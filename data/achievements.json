@@ -1,0 +1,23 @@
+[
+  { "id": "first_circuit", "name": "First Circuit", "description": "Complete your very first challenge", "emoji": "🌱", "tier": "bronze", "xp": 50, "points": 25, "condition": { "type": "first_challenge" } },
+  { "id": "speed_demon", "name": "Speed Demon", "description": "Complete any challenge in under 30 seconds", "emoji": "⚡", "tier": "silver", "xp": 100, "points": 50, "condition": { "type": "speed_demon", "threshold": 30000 } },
+  { "id": "perfectionist", "name": "Perfectionist", "description": "Complete a challenge with zero wasted blocks", "emoji": "💎", "tier": "gold", "xp": 150, "points": 75, "condition": { "type": "perfectionist" } },
+  { "id": "five_done", "name": "Getting Wired", "description": "Complete 5 challenges", "emoji": "🔌", "tier": "bronze", "xp": 75, "points": 40, "condition": { "type": "challenge_count", "count": 5 } },
+  { "id": "ten_done", "name": "Circuit Apprentice", "description": "Complete 10 challenges", "emoji": "🔧", "tier": "silver", "xp": 150, "points": 75, "condition": { "type": "challenge_count", "count": 10 } },
+  { "id": "twenty_done", "name": "Redstone Artisan", "description": "Complete 20 challenges", "emoji": "⚙️", "tier": "gold", "xp": 300, "points": 150, "condition": { "type": "challenge_count", "count": 20 } },
+  { "id": "all_challenges", "name": "Redstone Master", "description": "Complete all challenges", "emoji": "👑", "tier": "diamond", "xp": 1000, "points": 500, "condition": { "type": "all_challenges", "count": 33 } },
+  { "id": "night_owl", "name": "Night Owl", "description": "Complete a challenge at night (in-game)", "emoji": "🦉", "tier": "bronze", "xp": 50, "points": 25, "condition": { "type": "night_owl" } },
+  { "id": "minimalist", "name": "Minimalist", "description": "Complete a challenge using only 3 blocks", "emoji": "✨", "tier": "silver", "xp": 100, "points": 50, "condition": { "type": "minimalist", "maxBlocks": 3 } },
+  { "id": "streak_3", "name": "On a Roll", "description": "Maintain a 3-day login streak", "emoji": "🔥", "tier": "bronze", "xp": 50, "points": 25, "condition": { "type": "streak", "days": 3 } },
+  { "id": "streak_7", "name": "Weekly Warrior", "description": "Maintain a 7-day login streak", "emoji": "📅", "tier": "silver", "xp": 150, "points": 75, "condition": { "type": "streak", "days": 7 } },
+  { "id": "streak_30", "name": "Unstoppable", "description": "Maintain a 30-day login streak", "emoji": "🏆", "tier": "diamond", "xp": 500, "points": 250, "condition": { "type": "streak", "days": 30 } },
+  { "id": "level_5", "name": "Rising Star", "description": "Reach Level 5", "emoji": "⭐", "tier": "gold", "xp": 0, "points": 100, "condition": { "type": "level_reached", "level": 5 } },
+  { "id": "level_10", "name": "Grand Engineer", "description": "Reach Level 10", "emoji": "🌟", "tier": "diamond", "xp": 0, "points": 500, "condition": { "type": "level_reached", "level": 10 } },
+  { "id": "three_stars_5", "name": "Star Collector", "description": "Earn 3 stars on 5 different challenges", "emoji": "🌟", "tier": "silver", "xp": 150, "points": 75, "condition": { "type": "three_stars", "count": 5 } },
+  { "id": "three_stars_15", "name": "Perfection Incarnate", "description": "Earn 3 stars on 15 different challenges", "emoji": "💫", "tier": "gold", "xp": 300, "points": 150, "condition": { "type": "three_stars", "count": 15 } },
+  { "id": "category_master", "name": "Category Master", "description": "Complete all challenges in 3 different categories", "emoji": "🎯", "tier": "gold", "xp": 250, "points": 125, "condition": { "type": "category_master", "count": 3 } },
+  { "id": "logic_pro", "name": "Logic Pro", "description": "Complete all Logic Gates challenges", "emoji": "🧠", "tier": "diamond", "xp": 400, "points": 200, "condition": { "type": "category_master", "count": 8 } },
+  { "id": "secret_visionary", "name": "Visionary", "description": "Use the Observer Eye on 10 challenges", "emoji": "👁️", "tier": "silver", "xp": 100, "points": 50, "hidden": true, "condition": { "type": "challenge_count", "count": 10 } },
+  { "id": "speed_architect", "name": "Speed Architect", "description": "Complete 5 challenges in under 60 seconds each", "emoji": "🚀", "tier": "gold", "xp": 250, "points": 125, "hidden": true, "condition": { "type": "three_stars", "count": 5 } },
+  { "id": "redstone_hoarder", "name": "Redstone Hoarder", "description": "Collect 500 total points", "emoji": "💰", "tier": "gold", "xp": 200, "points": 0, "hidden": true, "condition": { "type": "challenge_count", "count": 25 } }
+]
