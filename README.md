@@ -1,55 +1,61 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Lucineer/capitaine/master/docs/capitaine-logo.jpg" alt="Capitaine" width="120">
-</p>
+# craftmind-circuits
 
-<h1 align="center">craftmind-circuits</h1>
+You've spent hours debugging a broken redstone clock. Most tutorials only show you how to replicate circuits, not design them. This plugin helps you bridge that gap through structured, gamified learning.
 
-<p align="center">AI circuit academy — gamified redstone challenges.</p>
+A Cocapn Fleet Minecraft plugin offering progressive redstone challenges with in-world validation and optional AI-assisted guidance.
 
 ---
 
-**CraftMind ecosystem** · Part of the [Lucineer fleet](https://github.com/orgs/Lucineer/repositories)
+## Why this exists
 
-## The Fleet
+Learning redstone design often involves inefficient trial and error. This plugin provides a scaffolded path from basic concepts to complex logic, integrating directly with your server. It runs on your infrastructure with no mandatory external services.
 
+## What it provides
 
-<details>
-<summary><strong>⚓ The Fleet</strong></summary>
+*   **34 Challenges**: Organized across 5 difficulty tiers, from introductory repeaters to advanced arithmetic units.
+*   **Live Validation**: Tests the physical redstone you build in your world, not multiple-choice answers.
+*   **Player Progression**: Tracks XP, streaks, and achievements with per-server leaderboards.
+*   **Optional AI Tutoring**: When configured with your API keys, it can offer contextual hints and ask guiding questions to help you reason through problems.
+*   **Circuit Optimizer**: Reviews your working designs and suggests improvements for size, speed, or reliability.
+*   **Fleet Native**: Player progress is portable across any server in your Cocapn Fleet.
 
-**Flagship vessels**
+## How it works
 
-- [cocapn.ai](https://github.com/Lucineer/capitaine)
-- [personallog.ai](https://github.com/Lucineer/personallog-ai)
-- [businesslog.ai](https://github.com/Lucineer/businesslog-ai)
-- [studylog.ai](https://github.com/Lucineer/studylog-ai)
-- [makerlog.ai](https://github.com/Lucineer/makerlog-ai)
-- [playerlog.ai](https://github.com/Lucineer/playerlog-ai)
-- [dmlog.ai](https://github.com/Lucineer/dmlog-ai)
-- [reallog.ai](https://github.com/Lucineer/reallog-ai)
-- [deckboss.ai](https://github.com/Lucineer/deckboss-ai)
+*   **In-World Validation**: Each challenge has criteria that are tested against the blocks and signals in your build area.
+*   **Fork-First Design**: Server operators can freely modify, add, or remove challenges to fit their community.
+*   **Local AI Processing**: When enabled, tutoring hints are generated locally using your configured API keys; no build data is sent to us.
+*   **Zero Dependencies**: No external database is required; it uses the Fleet's distributed protocol.
 
-**Fleet services**
+## A note on limitations
 
-- [Fleet Catalog](https://github.com/Lucineer/capitaine/blob/master/docs/fleet/FLEET.md)
-- [Git Agent (full)](https://github.com/Lucineer/git-agent)
-- [Cocapn Lite (minimal)](https://github.com/Lucineer/cocapn-lite)
-- [Fleet Orchestrator](https://github.com/Lucineer/fleet-orchestrator)
-- [Dead Reckoning Engine](https://github.com/Lucineer/dead-reckoning-engine)
-- [Dream Engine](https://github.com/Lucineer/dream-engine)
-- [Seed UI (5 layers)](https://github.com/Lucineer/seed-ui)
+The core challenge progression and validation work immediately. The AI-guided features—contextual hints, daily challenges, and the circuit optimizer—require you to supply and configure your own API keys for an AI provider. They are a powerful optional layer, not the core experience.
 
-**For power users**
+## Quick start
 
-- [Cocapn Lite (tabula rasa)](https://github.com/Lucineer/cocapn-lite)
-- [Cocapn (core platform)](https://github.com/Lucineer/cocapn)
-- [ZeroClaw (framework)](https://github.com/Lucineer/zeroclaw)
+1.  **Fork this repository.** This is fork-first software; you maintain your instance.
+2.  **Build the plugin** from your forked source.
+3.  Place the generated `.jar` file into your server's `plugins` directory.
+4.  Restart your server. Basic challenges and progression are now active.
+5.  *(Optional)*: To enable AI features, add your service keys to the generated `config.yml` file.
 
-[View all 106 repos →](https://github.com/orgs/Lucineer/repositories)
-[Fleet manifest →](https://github.com/Lucineer/capitaine/blob/master/docs/fleet/FLEET.md)
+You can browse a public Fleet instance showcasing the challenge library and leaderboards:
+https://the-fleet.casey-digennaro.workers.dev
 
-</details>
+## Configure AI features (BYOK)
 
+To use the AI tutoring, puzzle generation, or optimizer, you must bring your own keys. Add your LLM provider API key to `config.yml`. This keeps your data local and lets you control costs and models.
+
+## Contributing
+
+This project follows a fork-first philosophy. The best way to contribute is to fork the repository, implement the change or challenge you want, and run it on your server. If you believe your modification would benefit others, you are welcome to submit a pull request.
 
 ## License
 
-MIT · Superinstance & Lucineer (DiGennaro et al.)
+MIT License · Superinstance & Lucineer (DiGennaro et al.)
+
+---
+
+<div align="center">
+  <a href="https://the-fleet.casey-digennaro.workers.dev">The Fleet</a> · 
+  <a href="https://cocapn.ai">Cocapn</a>
+</div>
